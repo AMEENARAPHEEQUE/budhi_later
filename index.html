@@ -1,14 +1,68 @@
-<h1>What's your lucky number today?</h1>
-<input id="answer" placeholder="Type your answer..." />
-<button id="next1">Next</button>
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BUDHILATER - The Useless Calculator</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
 
-<input id="reply" placeholder="Your witty reply..." />
-<button id="next2">Next</button>
 
-<div class="calc-container" style="display: none;">
-  <input id="display" disabled />
-  <div class="buttons">
-    <button class="btn">7</button>
-    ...
+    <div id="welcome-box">
+      <h2>WELCOME TO BUDHILATER</h2>
+      <h3>ബുദ്ധിലേറ്റർ - കണക്കിന് വേണ്ടാ, കാഴ്ചക്ക് മാത്രം!</h3>
+    </div>
+
+    <div id="question-box" class="box">
+      <div id="question-text" class="question-text"></div>
+      <input
+        type="text"
+        id="answer-input"
+        placeholder="ഉത്തരം ഇവിടെ നൽകൂ"
+        autocomplete="off"
+      />
+      <button id="answer-btn">Next</button>
+      <div id="reply-text" class="reply-text"></div>
+    </div>
+
+    <div id="calculator" class="box" style="display:none;">
+      <div id="calc-display" class="calc-display">0</div>
+      <div id="calc-buttons" class="calc-buttons">
+        <button class="calc-btn" data-key="7">7</button>
+        <button class="calc-btn" data-key="8">8</button>
+        <button class="calc-btn" data-key="9">9</button>
+        <button class="calc-btn" data-key="+">+</button>
+
+        <button class="calc-btn" data-key="4">4</button>
+        <button class="calc-btn" data-key="5">5</button>
+        <button class="calc-btn" data-key="6">6</button>
+        <button class="calc-btn" data-key="-">-</button>
+
+        <button class="calc-btn" data-key="1">1</button>
+        <button class="calc-btn" data-key="2">2</button>
+        <button class="calc-btn" data-key="3">3</button>
+        <button class="calc-btn" data-key=""></button>
+
+        <button class="calc-btn" data-key="0">0</button>
+        <button class="calc-btn" data-key=".">.</button>
+        <button id="clear-btn" class="calc-btn">C</button>
+        <button class="calc-btn" data-key="/">/</button>
+
+        <button id="equal-btn" class="calc-btn equal-btn">=</button>
+      </div>
+    </div>
+
+    <div id="loading" class="box" style="display:none;">
+      <div class="loader"></div>
+      <p id="loading-text">Calculating... Please wait!</p>
+    </div>
+
+    <div id="result-box" class="box" style="display:none;"></div>
+
   </div>
-</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
