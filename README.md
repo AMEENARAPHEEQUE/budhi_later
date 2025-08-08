@@ -115,11 +115,9 @@ For Software:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
 
-# Additional Demos
-[Add any extra demo materials/links]
+https://youtu.be/TnpFH19PE0Y
+
 
 ## Team Contributions
 -Arshad – Designed the calculator interface so it looks functional but is actually gloriously useless. Created the dramatic fake loading animation that keeps users waiting for absolutely nothing.
